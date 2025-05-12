@@ -2,10 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: loki
-  namespace: monitoring
+  namespace: loki-monitoring
 spec:
   destination:
-    namespace: monitoring
+    namespace: loki-monitoring
     server: https://kubernetes.default.svc
   project: lgtm-demo
   source:
