@@ -4,7 +4,7 @@ metadata:
   name: loki
   namespace: argocd
 spec:
-  project: lgtm-demo
+  project: lgtm-stack-demo
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
