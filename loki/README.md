@@ -1,0 +1,1 @@
+Creates a namespace "loki-monitoring" and deploys the loki helm chart (defined in "application.yaml" with its "values.yaml") to the cluster.
