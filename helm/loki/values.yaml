@@ -1,0 +1,19 @@
+deploymentMode: SingleBinary
+loki:
+  useTestSchema: true
+  chunksCache:
+    enabled: false
+  storage:
+    type: filesystem
+    filesystem:
+      directory: /var/loki/chunks
+    bucketNames:
+      chunks: loki-chunks
+singleBinary:
+  replicas: 1
+backend:
+  replicas: 0
+read:
+  replicas: 0
+write:
+  replicas: 0

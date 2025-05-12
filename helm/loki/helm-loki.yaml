@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: loki
+  namespace: monitoring
+spec:
+  destination:
+    namespace: helm-guestbook
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    repoURL: https://grafana.github.io/helm-charts
+    chart: loki
+    targetRevision: 6.29.0
+    helm:
+      valueFiles:
+        - values.yaml
