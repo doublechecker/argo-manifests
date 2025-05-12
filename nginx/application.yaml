@@ -19,3 +19,9 @@ spec:
     - repoURL: 'https://github.com/doublechecker/argo-manifests'
       targetRevision: HEAD
       ref: values
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
