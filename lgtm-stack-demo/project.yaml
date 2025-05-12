@@ -8,7 +8,7 @@ spec:
   - group: '*'
     kind: '*'
   destinations:
-  - namespace: nginx-test
+  - namespace: monitoring
     server: https://kubernetes.default.svc
   orphanedResources:
     warn: false
