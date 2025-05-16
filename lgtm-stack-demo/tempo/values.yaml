@@ -1,0 +1,10 @@
+mode: single
+tempo:
+  metrics_generator:
+    enabled: true
+  retention:
+    days: 7
+persistence:
+  enabled: false
+service:
+  type: ClusterIP
