@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: monitoring
   source:
-    repoURL: https://github.com/dein-user/argo-manifests.git
+    repoURL: https://github.com/doublechecker/argo-manifests
     path: lgtm-stack-demo/datasources
     targetRevision: HEAD
   syncPolicy:
